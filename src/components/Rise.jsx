@@ -9,7 +9,7 @@ export function Rise({ children, delay = 0, className = "", play = "view" }) {
       : {
           initial: reduce ? false : { y: "115%" },
           whileInView: { y: "0%" },
-          viewport: { once: true, amount: 0.7 },
+          viewport: { once: true, amount: 0.4 },
         }
 
   return (

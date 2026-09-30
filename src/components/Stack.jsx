@@ -1,5 +1,5 @@
 import { stackGroups } from "../data"
-import { Rise, Stagger, StaggerItem } from "./Rise"
+import { Stagger, StaggerItem } from "./Rise"
 
 const groups = stackGroups.map((group) => {
   if (group.label === "Interface") return { ...group, items: ["JavaScript", ...group.items] }
@@ -10,11 +10,11 @@ const groups = stackGroups.map((group) => {
 export default function Stack() {
   return (
     <section id="skills" className="border-t border-line">
-      <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
+      <div className="mx-auto flex max-w-6xl flex-col items-center px-5 py-20 text-center sm:px-8 lg:py-28">
         <h2 className="text-5xl font-extrabold tracking-[-0.04em] sm:text-6xl">
-          <Rise>Skills & Technologies</Rise>
+          Skills & Technologies
         </h2>
-        <Stagger className="mt-14 divide-y divide-line border-y border-line">
+        <Stagger className="mt-14 w-full divide-y divide-line border-y border-line text-left">
           {groups.map((group) => (
             <StaggerItem key={group.label} className="flex flex-col gap-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:gap-10">
               <h3 className="text-3xl font-medium tracking-[-0.03em]">{group.label}</h3>

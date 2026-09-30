@@ -1,5 +1,5 @@
 import About from "./components/About"
-import Contact from "./components/Contact"
+// import Contact from "./components/Contact"
 import Experience from "./components/Experience"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
@@ -17,9 +17,9 @@ export default function App() {
         <About />
         <Stack />
         <Projects />
-        <Experience />
-        <Process />
-        <Contact />
+        {/* <Experience /> */}
+        {/* <Process /> */}
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

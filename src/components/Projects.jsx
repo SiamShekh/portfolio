@@ -2,7 +2,6 @@ import { useMemo, useState } from "react"
 import { motion, useReducedMotion } from "motion/react"
 import { workGroups } from "../data"
 import { ease } from "../motion"
-import { Rise } from "./Rise"
 
 const list = {
   hidden: {},
@@ -98,13 +97,13 @@ export default function Projects() {
 
   return (
     <section id="work" className="border-t border-line">
-      <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
-        <h2 className="text-5xl font-extrabold tracking-[-0.04em] sm:text-6xl">
-          <Rise>Selected Work</Rise>
+      <div className="mx-auto max-w-6xl px-5 sm:px-8 py-20 lg:py-28">
+        <h2 className="text-center text-5xl font-extrabold tracking-[-0.04em] sm:text-6xl">
+          Selected Work
         </h2>
-        <p className="mt-4 max-w-xl text-lg text-muted">
+        {/* <p className="mt-4 max-w-xl text-lg text-muted">
           Everything is grouped, so one list stays on screen at a time.
-        </p>
+        </p> */}
 
         <div className="mt-8 flex flex-wrap gap-2" role="tablist" aria-label="Work groups">
           {workGroups.map((entry) => {
