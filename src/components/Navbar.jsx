@@ -6,9 +6,9 @@ const links = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
-  { href: "#work", label: "Work" },
-  { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  // { href: "#work", label: "Work" },
+  // { href: "#experience", label: "Exper/ience" },
+  // { href: "#contact", label: "Contact" },
 ]
 
 export default function Navbar() {
